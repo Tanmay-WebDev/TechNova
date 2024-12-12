@@ -114,11 +114,3 @@ button.custom-purple:hover {
     }
 }
 
-/* Footer */
-.footer {
-    background-color: rgb(2, 2, 83);
-    color: white;
-    padding: 10px 0;
-    text-align: center;
-    font-family: "noto sans";
-}
