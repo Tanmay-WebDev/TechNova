@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="shortcut icon" href="TechNova.jpeg" type="image/x-icon">
+    <title>TechNova</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-" id="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">TechNova</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="service.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="price.html">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1 class="animated-heading">About Us</h1>
+        <p id="about-text" class="collapsed animated-text">
+            <b>Who We Are:</b><br>
+            TechNova is a forward-thinking technology company dedicated to revolutionizing productivity and efficiency through the power of Artificial Intelligence. Founded by a passionate team of tech enthusiasts, our mission is to empower individuals and businesses to achieve more by automating routine tasks, enhancing workflows, and providing intelligent insights.
+            
+            <br><br> <b>Our Vision:</b><br>
+            At TechNova, we envision a world where technology seamlessly integrates with daily tasks, unlocking human potential and creativity. We believe that productivity tools should not only simplify work but also inspire innovation. Our AI-driven solutions are designed to reduce manual effort, optimize processes, and help you focus on what truly matters.
+            
+            <br><br><b>What We Do:</b><br>
+            We specialize in developing AI-powered productivity applications that cater to a diverse range of users, from freelancers to large enterprises. Our platform offers:
+            <br><br>
+            <b>Task Management:</b> Effortlessly organize and prioritize tasks.
+            <br><b>AI-Powered Scheduling:</b> Smart scheduling that adapts to your needs and deadlines.
+            <br><b>Data-Driven Insights:</b> Analytics and insights to help you identify trends and optimize productivity.
+            <br><b>Automation Tools:</b> Streamline repetitive tasks and workflows to save time and energy.
+            <span class="extra-content">
+                <br><br><b>Why Choose Us?</b><br><br>
+                <b>Innovation:</b> We leverage the latest advancements in AI to create cutting-edge tools.
+                <br><b>User-Centric Design:</b> Our platform is intuitive, user-friendly, and designed to enhance your experience.
+                <br><b>Reliability:</b> We are committed to providing secure, reliable, and efficient solutions.
+                <br><b>Support:</b> Our dedicated support team is always available to help you maximize the value of our tools.
+                <br><br> <b>Our Commitment:</b><br><br>
+                We are committed to continuous improvement and innovation. By listening to our users and adapting to their evolving needs, we strive to deliver solutions that not only meet but exceed expectations. Our goal is to be your trusted partner in productivity, helping you achieve more with less effort.
+            </span>
+        </p>
+        <button class="btn btn-outline-primary read-more-btn" onclick="toggleReadMore()">Read More</button>
+        <img src="contact us.gif" class="img-fluid mt-3 animated-img" alt="About TechNova">
+        <button class="btn btn-outline-dark d-block mx-auto" onclick="window.location.href = 'contact.html'" id="contact-btn">Contact us For More Query</button>
+    </div>
+
+
+
+    <script>
+        function toggleReadMore() {
+            const aboutText = document.getElementById('about-text');
+            const button = document.querySelector('.read-more-btn');
+
+            if (aboutText.classList.contains('collapsed')) {
+                aboutText.classList.remove('collapsed');
+                aboutText.classList.add('expanded');
+                button.textContent = 'Read Less';
+            } else {
+                aboutText.classList.remove('expanded');
+                aboutText.classList.add('collapsed');
+                button.textContent = 'Read More';
+            }
+        }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"></script>
+
+    
+</body>
+</html>

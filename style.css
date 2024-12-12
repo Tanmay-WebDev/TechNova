@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar Styles */
+#navbar {
+    background-color: rgb(2, 2, 83); /* Reverted to original dark blue */
+    font-family: "Noto sans";
+}
+
+.navbar-brand {
+    cursor: pointer;
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    font-family: "Poppins";
+}
+
+.navbar-nav .nav-link:hover {
+    color: azure;
+}
+
+/* Hero Section */
+.hero-h1 {
+    color: rgb(2, 2, 83);
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.tn-p {
+    color: rebeccapurple;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+.custom-purple {
+    color: blue;
+    background-color: white;
+    border-color: blue;
+    width: 120px;
+}
+
+.custom-purple:hover {
+    background-color: rgb(3, 3, 140);
+    border-color: rgb(3, 3, 140);
+}
+
+.img-gif {
+    max-width: 100%;
+    height: auto;
+}
+
+/* About and Services Section */
+.section {
+    padding: 90px 0px; /* Increased padding for more space */
+}
+
+.section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.section p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Footer */
+.footer {
+    background-color: rgb(2, 2, 83);
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    font-family: "Noto sans";
+}
+
+
+mark{
+    background-color: rgb(68, 21, 112);
+    border-radius: 20px;
+    color: white;
+}
